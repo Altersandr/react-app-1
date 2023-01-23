@@ -1,13 +1,31 @@
 import React, { Component } from "react";
+import { MyComponent } from "./MyComponent";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <h1>My React App</h1>
-      </div>
-    );
-  }
-}
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.onClickBtn = this.onClickBtn.bind(this);
+//   }
+
+//   onClickBtn() {
+//     console.log("Button has been clicked");
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <MyComponent title="React" onButtonClicked={this.onClickBtn} />
+//       </div>
+//     );
+//   }
+// }
+
+const App = () => {
+  return (
+    <div>
+      <MyComponent title="Hello World" />
+    </div>
+  );
+};
 
 export default App;
